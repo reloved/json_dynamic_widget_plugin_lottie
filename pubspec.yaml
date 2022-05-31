@@ -1,37 +1,37 @@
-name: json_dynamic_widget_plugin_lottie
-description: A plugin to the JSON Dynamic Widget to provide Lottie support to the widgets
-homepage: https://github.com/peiffer-innovations/json_dynamic_widget_plugin_lottie
+name: 'json_dynamic_widget_plugin_lottie'
+description: 'A plugin to the JSON Dynamic Widget to provide Lottie support to the widgets'
+homepage: 'https://github.com/peiffer-innovations/json_dynamic_widget_plugin_lottie'
+version: '3.0.0+1'
 
-version: 3.0.0
-
-environment:
+environment: 
   sdk: '>=2.17.0 <3.0.0'
 
-analyzer:
-  exclude: [lib/generated/**]
+analyzer: 
+  exclude: 
+    - 'lib/generated/**'
 
-dependencies:
-  child_builder: ^2.0.0+3
-  flutter:
-    sdk: flutter
-  json_class: ^2.1.2+4
-  json_dynamic_widget: ^5.0.0
-  json_theme: ^4.0.0
-  logging: ^1.0.1
-  lottie: ^1.3.0
-  meta: ^1.7.0
-  uuid: ^3.0.6
 
-false_secrets:
-  - example/web/index.html
+dependencies: 
+  child_builder: '^2.0.0+3'
+  flutter: 
+    sdk: 'flutter'
+  json_class: '^2.1.2+5'
+  json_dynamic_widget: '^5.0.0+1'
+  json_theme: '^4.0.0+1'
+  logging: '^1.0.2'
+  lottie: '^1.3.0'
+  meta: '^1.7.0'
+  uuid: '^3.0.6'
 
-dev_dependencies:
-  flutter_test:
-    sdk: flutter
+false_secrets: 
+  - 'example/web/index.html'
 
-ignore_updates:
-  # Ignoring everything in flutter_test as those are all point-in-time entries
-  # can't upgrade without upgrading Flutter itself.
+dev_dependencies: 
+  flutter_test: 
+    sdk: 'flutter'
+
+
+ignore_updates: 
   - 'async'
   - 'boolean_selector'
   - 'characters'

@@ -1,3 +1,8 @@
+## [3.0.0+1] - May, 31, 2022
+
+* Automated dependency updates
+
+
 ## [2.1.0] - March 27th, 2022
 
 * Framework upgrade
@@ -31,3 +36,4 @@
 ## [1.0.0] - November 14th, 2021
 
 * Initial release
+
