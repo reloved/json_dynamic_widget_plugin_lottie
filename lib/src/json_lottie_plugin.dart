@@ -4,12 +4,12 @@ import 'package:json_theme/json_theme_schemas.dart';
 
 class JsonLottiePlugin {
   static void bind(JsonWidgetRegistry registry) {
-    var schemaCache = SchemaCache();
+    final schemaCache = SchemaCache();
     schemaCache.addSchema(LottieSchema.id, LottieSchema.schema);
 
     registry.registerCustomBuilder(
       LottieBuilder.type,
-      JsonWidgetBuilderContainer(
+      const JsonWidgetBuilderContainer(
         builder: LottieBuilder.fromDynamic,
         schemaId: LottieSchema.id,
       ),
