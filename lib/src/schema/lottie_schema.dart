@@ -7,6 +7,7 @@ class LottieSchema {
   static final schema = {
     r'$schema': 'http://json-schema.org/draft-06/schema#',
     r'$id': '$id',
+    r'$children': 0,
     'title': 'Lottie',
     'type': 'object',
     'additionalProperties': false,
