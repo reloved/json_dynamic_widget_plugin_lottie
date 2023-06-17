@@ -30,7 +30,7 @@ class LottieBuilder extends JsonWidgetBuilder {
         super(numSupportedChildren: kNumSupportedChildren);
 
   static const kNumSupportedChildren = 0;
-  static const type = 'lottie';
+  static const kType = 'lottie';
 
   final bool? addRepaintBounary;
   final Alignment? alignment;

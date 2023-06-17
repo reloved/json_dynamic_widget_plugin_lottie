@@ -8,7 +8,7 @@ class JsonLottiePlugin {
     schemaCache.addSchema(LottieSchema.id, LottieSchema.schema);
 
     registry.registerCustomBuilder(
-      LottieBuilder.type,
+      LottieBuilder.kType,
       const JsonWidgetBuilderContainer(
         builder: LottieBuilder.fromDynamic,
         schemaId: LottieSchema.id,
