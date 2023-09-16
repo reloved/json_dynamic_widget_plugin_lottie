@@ -1,7 +1,5 @@
 import 'dart:convert';
 
-import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'package:json_dynamic_widget/json_dynamic_widget.dart';
 import 'package:json_dynamic_widget_plugin_lottie/json_dynamic_widget_plugin_lottie.dart';
 import 'package:logging/logging.dart';
@@ -22,13 +20,13 @@ void main() async {
   final navigatorKey = GlobalKey<NavigatorState>();
 
   final registry = JsonWidgetRegistry.instance;
-  JsonLottiePlugin.bind(registry);
+  JsonLottiePluginRegistrar.registerDefaults(registry: registry);
 
   registry.navigatorKey = navigatorKey;
 
   final data = JsonWidgetData.fromDynamic(
     json.decode(await rootBundle.loadString('assets/pages/lotties.json')),
-  )!;
+  );
 
   runApp(
     MaterialApp(
@@ -42,7 +40,7 @@ void main() async {
 }
 
 class ExampleWidgetPage extends StatelessWidget {
-  ExampleWidgetPage({
+  const ExampleWidgetPage({
     Key? key,
     required this.data,
   }) : super(key: key);
